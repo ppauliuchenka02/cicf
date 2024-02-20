@@ -8,9 +8,9 @@ from minio import Minio
 # read the contents and if it is a single integer N, make a new object having
 # the name `result-*` that contains the N-th fibinocci number.
 
-ACCESS_KEY = ""
-SECRET_KEY = ""
-bucket_name = "cicf-data"
+ACCESS_KEY = "8eOZ4jXbbgRpWJUwtYko"
+SECRET_KEY = "W7YHZugChqTdqK49xoWOJOm7LA73ATOwCbcpkPic"
+bucket_name = "cici-data"
 
 c = Minio("localhost:9000", ACCESS_KEY, SECRET_KEY, secure=False)
 

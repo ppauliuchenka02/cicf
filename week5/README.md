@@ -91,7 +91,7 @@ And we need to configure a root user and password.
 
     mkdir -p data
 
-    docker run -d -p 9000:9000 -p 9001:9001 -v $(pwd)/data -e "MINIO_ROOT_USER=cicf" -e "MINIO_ROOT_PASSWORD=cicf1234" minio/minio server /data --console-address ":9001"
+    docker run -d -p 9000:9000 -p 9001:9001 -v $(pwd)/data:/data -e "MINIO_ROOT_USER=cicf" -e "MINIO_ROOT_PASSWORD=cicf1234" minio/minio server /data --console-address ":9001"
 
 The container should have started and be running in the background.
 Docker printed the id for this container.
