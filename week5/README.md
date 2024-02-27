@@ -130,6 +130,11 @@ And then save it.
 Now upload some files.
 We want hello.py.
 
+Install the Python Minio library
+
+    sudo apt install python3-pip
+    pip3 install minio
+
 Copy the credentials into the store.py file.
 Run `store.py`.
 Refresh the bucket, nothing should have happened.
